@@ -1,0 +1,119 @@
+[
+    {
+        "id": "e27102140289efdc",
+        "type": "tab",
+        "label": "Practica 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4e03d438c9b09979",
+        "type": "inject",
+        "z": "e27102140289efdc",
+        "name": "Hola mundo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Saludo",
+        "payload": "Hola mundo",
+        "payloadType": "str",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "f6b653080bc203eb"
+            ]
+        ]
+    },
+    {
+        "id": "f6b653080bc203eb",
+        "type": "debug",
+        "z": "e27102140289efdc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "0669cf11f31dc328",
+        "type": "inject",
+        "z": "e27102140289efdc",
+        "name": "Hola mundo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "Saludo",
+        "payload": "Hola mundo",
+        "payloadType": "str",
+        "x": 220,
+        "y": 240,
+        "wires": [
+            [
+                "a3f4237a91f59876"
+            ]
+        ]
+    },
+    {
+        "id": "a3f4237a91f59876",
+        "type": "debug",
+        "z": "e27102140289efdc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8e82a9229a5b7e89",
+        "type": "function",
+        "z": "e27102140289efdc",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 0,
+        "wires": [
+            []
+        ]
+    }
+]
